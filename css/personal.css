@@ -24,9 +24,13 @@ body {
     font-family: 'Source Code Pro', monospace;
 }
 
+.code-bkg {
+    background-color: #212529 !important;
+}
+
 .cust-col {
-    display: flex!important;
-    align-items: center!important;
+    display: flex !important;
+    align-items: center !important;
 }
 
 .badge {

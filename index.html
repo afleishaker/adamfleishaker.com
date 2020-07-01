@@ -34,24 +34,12 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap-material-design.js"></script>
+    <script src="js/faker.min.js"></script>
 </head>
 
 <body>
     <!-- Nav -->
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark-blue">
-        <a class="navbar-brand" href="#"><i class="fas fa-code pr-2"></i>Adam Fleishaker</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarList" aria-controls="navbarList" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarList">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"><a class="nav-link" href="#"><i class="fas fa-home pr-1"></i>Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/adamfleishaker"><i class="fab fa-linkedin-in pr-1"></i>LinkedIn</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://github.com/afleishaker"><i class="fab fa-github-alt pr-1"></i>GitHub</a></li>
-                <li class="nav-item"><a class="nav-link" href="assets/resume.pdf"><i class="fas fa-file-alt pr-1"></i>Resume</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div id="nav"></div>
 
     <!-- Main Content -->
     <main role="main">
@@ -126,17 +114,13 @@
         </div>
     </div>
 
-    <!-- Script - Triggers Bootstrap Material, projects, and modal field population -->
+    <!-- Script - Triggers Bootstrap Material and gets reused/parameterized views -->
     <script>
         $(document).ready(function () {
             $('body').bootstrapMaterialDesign();
 
-            $('#infoModal').on('show.bs.modal', function (event) {
-                let button = $(event.relatedTarget);
-                $("#infoModalTitle").text(button.data('modal-title'));
-                $("#infoModalSubtitle").text(button.data('modal-subtitle'));
-                $("#infoModalDescription").html(button.data('modal-description'));
-                $("#infoModalLinks").html(button.data('modal-links'));
+            $.get("nav.html", {}, function (data) {
+                $("#nav").html(data);
             });
 
             $.getJSON('projects.json', function(json_data) {
@@ -169,6 +153,14 @@
                         row.append(data);
                     });
                 }
+            });
+
+            $('#infoModal').on('show.bs.modal', function (event) {
+                let button = $(event.relatedTarget);
+                $("#infoModalTitle").text(button.data('modal-title'));
+                $("#infoModalSubtitle").text(button.data('modal-subtitle'));
+                $("#infoModalDescription").html(button.data('modal-description'));
+                $("#infoModalLinks").html(button.data('modal-links'));
             });
         });
     </script>
