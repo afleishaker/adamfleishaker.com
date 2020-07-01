@@ -119,11 +119,11 @@
         $(document).ready(function () {
             $('body').bootstrapMaterialDesign();
 
-            $.get("nav.html", {}, function (data) {
+            $.get("/nav.html", {}, function (data) {
                 $("#nav").html(data);
             });
 
-            $.getJSON('projects.json', function(json_data) {
+            $.getJSON('/projects.json', function(json_data) {
                 let projects = json_data;
                 let row = null;
                 for (let i = 0; i < projects.length; i++) {
@@ -132,7 +132,7 @@
                     }
                     row = $('#projects').children().last();
 
-                    $.get("card.html", {}, function (data) {
+                    $.get("/card.html", {}, function (data) {
                         data = $(data)
                         data.attr("data-toggle", "modal");
                         data.attr("data-target", "#infoModal");
