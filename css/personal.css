@@ -1,5 +1,179 @@
+@font-face {
+    font-family: "Source Code Pro";
+    src: url(/assets/Source_Code_Pro/SourceCodePro-ExtraLight.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Source Code Pro";
+    src: url(/assets/Source_Code_Pro/SourceCodePro-ExtraLightItalic.ttf);
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Source Code Pro";
+    src: url(/assets/Source_Code_Pro/SourceCodePro-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Source Code Pro";
+    src: url(/assets/Source_Code_Pro/SourceCodePro-LightItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Source Code Pro";
+    src: url(/assets/Source_Code_Pro/SourceCodePro-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Source Code Pro";
+    src: url(/assets/Source_Code_Pro/SourceCodePro-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: "Source Code Pro";
+    src: url(/assets/Source_Code_Pro/SourceCodePro-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Source Code Pro";
+    src: url(/assets/Source_Code_Pro/SourceCodePro-MediumItalic.ttf);
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: "Source Code Pro";
+    src: url(/assets/Source_Code_Pro/SourceCodePro-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Source Code Pro";
+    src: url(/assets/Source_Code_Pro/SourceCodePro-SemiBoldItalic.ttf);
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Source Code Pro";
+    src: url(/assets/Source_Code_Pro/SourceCodePro-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Source Code Pro";
+    src: url(/assets/Source_Code_Pro/SourceCodePro-BoldItalic.ttf);
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Source Code Pro";
+    src: url(/assets/Source_Code_Pro/SourceCodePro-Black.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Source Code Pro";
+    src: url(/assets/Source_Code_Pro/SourceCodePro-BlackItalic.ttf);
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(/assets/Source_Sans_Pro/SourceSansPro-ExtraLight.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(/assets/Source_Sans_Pro/SourceSansPro-ExtraLightItalic.ttf);
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(/assets/Source_Sans_Pro/SourceSansPro-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(/assets/Source_Sans_Pro/SourceSansPro-LightItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(/assets/Source_Sans_Pro/SourceSansPro-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(/assets/Source_Sans_Pro/SourceSansPro-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(/assets/Source_Sans_Pro/SourceSansPro-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(/assets/Source_Sans_Pro/SourceSansPro-SemiBoldItalic.ttf);
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(/assets/Source_Sans_Pro/SourceSansPro-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(/assets/Source_Sans_Pro/SourceSansPro-BoldItalic.ttf);
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(/assets/Source_Sans_Pro/SourceSansPro-Black.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(/assets/Source_Sans_Pro/SourceSansPro-BlackItalic.ttf);
+    font-weight: 900;
+    font-style: italic;
+}
+
 body {
     padding-top: 4.5rem !important;
+    font-family: "Source Sans Pro", 'sans-serif' !important;
+    font-weight: 400;
+
 }
 
 .bg-dark-blue {
@@ -20,8 +194,10 @@ body {
     border-radius: 15% !important;
 }
 
-.code {
-    font-family: 'Source Code Pro', monospace;
+.code, .btn {
+    font-family: "Source Code Pro", 'monospace' !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
 }
 
 .code-bkg {
