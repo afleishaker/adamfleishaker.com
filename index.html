@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="/css/bootstrap-material-design.css">
     <link rel="stylesheet" href="/css/animate.min.css">
     <link rel="stylesheet" href="/css/personal.css">
-    <link rel="stylesheet" href="/css/pixelified.css">
+    <link rel="stylesheet" href="/fonts/fontawesome/css/all.css">
 
     <!-- JS assets -->
     <script src="/js/jquery-3.2.1.min.js"></script>
@@ -81,7 +81,7 @@
 
         <!-- Main Content - Projects -->
         <div class="container">
-            <div id="projects" class="animated fadeIn"></div>
+            <div id="projects" class="animated fadeIn card-deck pt-3"></div>
         </div>
     </main>
 
@@ -90,7 +90,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="modal-title" id="infoModalTitle">Modal title</h2>
+                    <h2 class="modal-title font-weight-semi-bold" id="infoModalTitle">Modal title</h2>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -101,7 +101,7 @@
                     <div id="infoModalLinks"></div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-dark btn-lg text-dark" data-dismiss="modal"><i class='icon-cross pr-2'></i>Close</button>
+                    <button type="button" class="btn btn-outline-dark btn-lg text-dark" data-dismiss="modal"><i class='fas fa-times pr-2'></i>Close</button>
                 </div>
             </div>
         </div>
@@ -109,6 +109,23 @@
 
     <!-- Script - Triggers Bootstrap Material and gets reused/parameterized views -->
     <script>
+        function createButton(url, classes, icon, text){
+            return `<a ${url ? 'href="' + url + '"' : ''}
+                    class='btn ${classes ? classes : 'btn-outline-dark btn-lg text-dark'}'
+                    role='button'>
+                       ${icon ? '<i class="' + icon + ' pr-2" />' : ''}
+                       ${text}
+                    </a>`
+        }
+
+        function createButtonGroup(buttons){
+            var output = `<div class="text-center"><div class="btn-group-lg btn-group-vertical">`
+            for(i=0; i<buttons.length; i++){
+                output += createButton(buttons[i].url, buttons[i].classes, buttons[i].icon, buttons[i].text)
+            }
+            return output + `</div></div>`
+        }
+
         $(document).ready(function () {
             $('body').bootstrapMaterialDesign();
 
@@ -118,32 +135,26 @@
 
             $.getJSON('/projects.json', function(json_data) {
                 let projects = json_data;
-                let row = null;
                 for (let i = 0; i < projects.length; i++) {
-                    if (i % 3 === 0) {
-                        $('#projects').append("<div class='row'></div>");
-                    }
-                    row = $('#projects').children().last();
-
                     $.get("/card.html", {}, function (data) {
                         data = $(data)
                         data.attr("data-toggle", "modal");
                         data.attr("data-target", "#infoModal");
-                        data.attr("data-modal-title", projects[i].title);
-                        data.attr("data-modal-subtitle", projects[i].timeline);
-                        data.attr("data-modal-description", projects[i].modal_html);
-                        data.attr("data-modal-links", projects[i].modal_links);
+                        data.attr("data-modal-title", projects[i]['title']);
+                        data.attr("data-modal-subtitle", projects[i]['subtitle']);
+                        data.attr("data-modal-description", projects[i]['description']);
+                        data.attr("data-modal-links", createButtonGroup(projects[i]['modal_links']));
 
                         img = data.children(0).children(0).first();
-                        img.attr("src", projects[i].img);
+                        img.attr("src", projects[i]['img']);
 
                         body = data.children(0).children(1).last().children(0);
-                        body.eq(0).html(projects[i].title);
-                        body.eq(1).html(projects[i].timeline);
-                        body.eq(2).html(projects[i].description);
-                        body.children(0).html(body.children(0).html() + projects[i].button);
+                        body.eq(0).html(projects[i]['title']);
+                        body.eq(1).html(projects[i]['subtitle']);
+                        body.eq(2).html(projects[i]['summary']);
+                        body.eq(3).html(createButtonGroup(projects[i]['button']));
 
-                        row.append(data);
+                        $('#projects').append(data);
                     });
                 }
             });
