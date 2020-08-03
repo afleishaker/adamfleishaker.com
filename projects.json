@@ -30,7 +30,7 @@
   {
     "img": "/img/dss.png",
     "title": "Disney Streaming",
-    "subtitle": "Summer 2019, 2020",
+    "subtitle": "Summer 2019, Summer 2020",
     "summary": "My 2019 summer internship was in New York at DSS where I automated regression testing of media. In 2020, I returned to my team contributing more generally to our goals.",
     "description": "At Disney Streaming Services in my 2019 summer internship, I did the following:<ul><li>Automated regression testing of media utilizing MovieLabs, TestNG for a suite-based testing framework, and Spring for an auxiliary API.</li><li>Integrated test result reporting to Slack and test visualization software.</li><li>Created Jenkins parameterized pipelines with Groovy and Ansible playbooks for deployment of the API and invocation of the testing framework.</li><li>Analyzed various tools for improving testing, including SonarQube for analysis of unit and integration tests, code coverage, and vulnerabilities.</li><li>Standardized our team's testing conventions and philosophy.</li></ul>",
     "button": [{
