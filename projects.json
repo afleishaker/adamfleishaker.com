@@ -48,7 +48,7 @@
   {
     "img": "/img/perlmutter.gif",
     "title": "Perlmutter App",
-    "subtitle": "Spring—Summer 2020",
+    "subtitle": "Spring 2020—Present",
     "summary": "In late April, I began working under Prof. Gene Miller to develop the Perlmutter App, a communication framework allowing non-profits to interface with constituents.",
     "description": "In late April, I began working under <a href='https://www.brandeis.edu/facultyguide/person.html?emplid=a17250782cc27b6ced397bc3c9310b5f32e03d34'>Prof. Gene Miller</a> of the Brandeis International Business School alongside <a href='https://github.com/mdodell'>Mitchell Dodell</a> and <a href='https://www.linkedin.com/in/daniel-khudyak/'>Daniel Khudyak</a> to develop solutions for non-profits in the post-COVID environment. Perlmutter App is a communication framework allowing non-profits to interface with constituents via web-app, phone, and/or email, in a unified format.<br><br>Organizations can send events, information, and messages as admins to users via call, text, email, or in-app newsletter.<br><br>Our primary client is <a href='https://havenproject.net/'>The Haven Project</a>, an impactful organization started to address a gap in services to unaccompanied homeless young adults and surrounding communities. They provide direct service to more than 200 homeless unaccompanied youth ages 17-24 each year in their Drop-in Centers, with referrals to other youth serving organizations for hundreds more who don’t meet intake criteria.<br><br>I was responsible for Rails back-end work, with Mitchell handling the front-end, and Daniel facilitating as PM.",
     "button": [{
@@ -57,7 +57,7 @@
     }],
     "modal_links": [
       {
-        "url": "https://github.com/PerlmutterFellows/PerlmutterSummer2020",
+        "url": "https://github.com/PerlmutterFellows/PerlmutterApp",
         "icon": "fab fa-github-alt",
         "text": "View GitHub"
       }
