@@ -30,7 +30,7 @@
   {
     "img": "/img/dss.png",
     "title": "Disney Streaming",
-    "subtitle": "Present, Summer 2020, Summer 2019",
+    "subtitle": "Summer 2019, 2020, 2021—Present",
     "summary": "After interning twice for the company in the summer of 2019 and 2020, I will be an associate software engineer for DSS upon my graduation in May.",
     "description": "2020:<ul><li>Was responsible for critical portions of our team’s implementation of a higher-level project.</li><li>Contributed to development of a utility API for our teams and partners using AWS, Java, and Spring framework.</li><li>Handled load-testing of endpoints with JMeter and backfilled data for hundreds of thousands of files.</li><li>Coordinated with teams and facilitated deployments from testing to production environments.</li></ul><br>2019:<ul><li>Created Jenkins parameterized pipelines with Groovy and Ansible playbooks for deployment and invocation of the testing framework and API, optimizing our testing methodology and greatly improving our release time to production.</li><li>Analyzed various tools for testing, including SonarQube for analysis of our unit & integration tests, code coverage, and vulnerabilities.</li><li>Integrated test result reporting to Slack and test visualization software.</li></ul>",
     "button": [{
