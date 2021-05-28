@@ -1,60 +1,42 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Metadata -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Hi there! I'm Adam, a double major in Computer Science and Business at Brandeis University with a passion for programming, entrepreneurship, and civic tech." />
+    <meta name="google-site-verification" content="fRd6qhqb-5nYArNWfLnkRf2tUDEAwfc7XA4drtnsiUo">
     <link rel="icon" href="/assets/favicon.ico">
-    <title>404</title>
-    <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "WebSite",
-            "name": "Adam Fleishaker",
-            "alternateName": "AdamFleishaker.com",
-            "url": "http://www.adamfleishaker.com"
-        }
-    </script>
-
+    <title>{{site.name}}</title>
     <!-- CSS assets -->
-    <link rel="stylesheet" href="/css/bootstrap-material-design.css">
+    <link rel="stylesheet" href="https://unpkg.com/@primer/css@^16.0.0/dist/primer.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
     <link rel="stylesheet" href="/css/animate.min.css">
     <link rel="stylesheet" href="/css/personal.css">
-    <link rel="stylesheet" href="/fonts/fontawesome/css/all.css">
-
     <!-- JS assets -->
-    <script src="/js/jquery-3.2.1.min.js"></script>
-    <script src="/js/popper.js"></script>
-    <script src="/js/bootstrap-material-design.js"></script>
+    <script src="https://kit.fontawesome.com/4a216bf9e6.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/3.3.0/balancetext.min.js" crossorigin="anonymous"></script>
     <script src="/js/faker.min.js"></script>
 </head>
 
 <body>
-    <!-- Nav -->
-    <div id="nav"></div>
+    {% include header.html %}
+    <div class="text-center">
+        <h1 class="animated infinite tada pt-3"><i class="fas fa-exclamation-triangle fa-2x pb-3"></i></h1>
+        <h2 id="errorMessage" class="balance-text text-mono pb-3">[WARNING] AN ERROR FOUND.</h2>
+        <p class="balance-text pb-2"><strong>Kidding, this is just a fun 404 message!</strong> You've encountered a removed/currently unavailable path. ¯\_(ツ)_/¯<br>Please use the navigation above or try again later. (/¯◡‿◡)/¯﻿</p>
+        <p class="balance-text pb-4"><a class="btn" href="/" type="button">Return to the homepage</a></p>
+            
+    </div>
 
-    <!-- Main Content -->
-    <main role="main">
-        <div class="container align-middle text-center code-bkg">
-
-            <h1 class="animated infinite tada display-1 pt-3"><i class="fas fa-exclamation-triangle text-white pb-3"></i></h1>
-            <h2 id="errorMessage" class="code display-3 text-white pb-3">[WARNING] AN ERROR FOUND.</h2>
-            <p class="code text-white pb-2"><strong>Kidding, this is just a fun 404 message!</strong> You've encountered a removed/currently unavailable path. ¯\_(ツ)_/¯<br>Please use the navigation above or try again later. (/¯◡‿◡)/¯﻿</p>
-            <p class="pb-4"><a class="btn btn-outline-light btn-raised btn-lg code text-capitalize" href="/" role="button"><i class='fa fa-door-open pr-2'></i>Return to the homepage</a></p>
-        </div>
-    </main>
-
-    <!-- Script - Triggers Bootstrap Material and gets reused/parameterized views -->
     <script>
         $(document).ready(function () {
-            $('body').bootstrapMaterialDesign();
-
-            $.get("/nav.html", {}, function (data) {
-                $("#nav").html(data);
-            });
-
             $('#errorMessage').html($('#errorMessage').html() + " " + capitalize(faker.hacker.phrase()));
         });
 
@@ -62,5 +44,6 @@
             return str.charAt(0).toUpperCase() + str.slice(1);
         }
     </script>
+    <script src="/js/personal.js"></script>
 </body>
 </html>

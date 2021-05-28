@@ -1,178 +1,60 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Metadata -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="google-site-verification" content="fRd6qhqb-5nYArNWfLnkRf2tUDEAwfc7XA4drtnsiUo">
-        <meta name="description" content="Hi there! I'm Adam, a recent grad in Computer Science and Business at Brandeis University with a passion for programming, entrepreneurship, and civic tech." />
-        <meta property="og:title" content="adamfleishaker.com">
-        <meta property="og:description" content="Hi there! I'm Adam, a recent grad in Computer Science and Business at Brandeis University with a passion for programming, entrepreneurship, and civic tech." />
-        <meta property="og:image" content="http://adamfleishaker.com/img/adamfleishaker.jpg">
-        <meta property="og:url" content="http://adamfleishaker.com">
-        <link rel="icon" href="/assets/favicon.ico">
-        <title>Adam Fleishaker</title>
-        <script type="application/ld+json">
-            {
-                "@context": "http://schema.org",
-                "@type": "WebSite",
-                "name": "Adam Fleishaker",
-                "alternateName": "AdamFleishaker.com",
-                "url": "http://adamfleishaker.com"
-            }
-        </script>
 
-        <!-- CSS assets -->
-        <link rel="stylesheet" href="/css/bootstrap-material-design.css">
-        <link rel="stylesheet" href="/css/animate.min.css">
-        <link rel="stylesheet" href="/css/personal.css">
-        <link rel="stylesheet" href="/fonts/fontawesome/css/all.css">
+<head>
+	<!-- Metadata -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="google-site-verification" content="fRd6qhqb-5nYArNWfLnkRf2tUDEAwfc7XA4drtnsiUo">
+	<link rel="icon" href="/assets/favicon.ico">
+	<title>{{site.name}}</title>
+	<!-- CSS assets -->
+	<link rel="stylesheet" href="https://unpkg.com/@primer/css@^16.0.0/dist/primer.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="/css/animate.min.css">
+	<link rel="stylesheet" href="/css/personal.css">
+	<!-- JS assets -->
+	<script src="https://kit.fontawesome.com/4a216bf9e6.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/3.3.0/balancetext.min.js" crossorigin="anonymous"></script>
+</head>
 
-        <!-- JS assets -->
-        <script src="/js/jquery-3.2.1.min.js"></script>
-        <script src="/js/popper.js"></script>
-        <script src="/js/bootstrap-material-design.js"></script>
-        <script src="/js/faker.min.js"></script>
-    </head>
-
-    <body>
-        <!-- Nav -->
-        <div id="nav"></div>
-
-        <!-- Main Content -->
-        <main role="main">
-            <!-- Main Content - About/Skills -->
-            <div class="container mb-3">
-                <div class="animated fadeIn">
-                    <div class="adam-profile mx-auto">
-                        <img class="img-thumbnail img-fluid part-round" src="/img/adamfleishaker.jpg" itemprop="image" alt="Adam Fleishaker" />
-                    </div>
-                    <h1 class="display-2 adam-info mx-auto text-center font-weight-normal">Adam Fleishaker</h1>
-                    <h2 class="display-4 adam-info mx-auto text-center">Hi there! I'm Adam, a recent grad in Computer Science and Business at Brandeis University with a passion for programming, entrepreneurship, and civic tech.</h2>
-                    <div class="row mt-4">
-                        <div class="col cust-col mb-2">
-                            <p class="lead mx-auto my-auto text-center">When not programming a personal project, you can find me singing in my musical theater a cappella group <a href="http://prosceniumacappella.com/">Proscenium</a> or giving back to Brandeis and supporting my peers in my role as a <a href="https://www.brandeis.edu/academic-services/advising/peer/roosevelt-fellows/index.html">Roosevelt Fellow</a>, Brandeis' peer academic advisors. Check out some of my projects below or reach out to me through my <a href="https://www.linkedin.com/in/adamfleishaker">LinkedIn</a>, <a href="https://github.com/afleishaker">GitHub</a>, or <a href="assets/resume.pdf">resume</a> above!</p>
-                        </div>
-                        <div class="col mb-2">
-                            <div class="lead mx-auto text-center center-block mb-3">
-                                <h4 class="mb-1">Technical Skills:</h4>
-                                <h1 class="d-inline"><span class="code badge badge-primary">Java</span></h1>
-                                <h2 class="d-inline"><span class="code badge badge-secondary">Python</span></h2>
-                                <h2 class="d-inline"><span class="code badge badge-danger">Ruby on Rails</span></h2>
-                                <h2 class="d-inline"><span class="code badge badge-success">JS</span></h2>
-                                <h3 class="d-inline"><span class="code badge badge-light">REST APIs</span></h3>
-                                <h4 class="d-inline"><span class="code badge badge-dark">Automation</span></h4>
-                                <h4 class="d-inline"><span class="code badge badge-warning">Testing</span></h4>
-                                <h5 class="d-inline"><span class="code badge badge-primary">Web development</span></h5>
-                                <h5 class="d-inline"><span class="code badge badge-danger">Android</span></h5>
-                                <span class="code badge badge-success">PHP</span>
-                                <span class="code badge badge-primary bg-dark-blue">SQL</span>
-                            </div>
-                            <div class="lead mx-auto text-center center-block">
-                                <h4 class="mb-1">Non-Technical Skills:</h4>
-                                <h1 class="d-inline"><span class="code badge badge-dark">Microsoft Office</span></h1>
-                                <h2 class="d-inline"><span class="code badge badge-primary bg-dark-blue">Photoshop</span></h2>
-                                <h2 class="d-inline"><span class="code badge badge-danger">Illustrator</span></h2>
-                                <h3 class="d-inline"><span class="code badge badge-light">Premiere Pro</span></h3>
-                                <h4 class="d-inline"><span class="code badge badge-warning">Camtasia</span></h4>
-                                <h4 class="d-inline"><span class="code badge badge-success">Consulting</span></h4>
-                                <h5 class="d-inline"><span class="code badge badge-primary">SEO</span></h5>
-                                <span class="code badge badge-dark">Market analysis/research</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Main Content - Projects -->
-            <div class="container">
-                <div id="projects" class="animated fadeIn card-deck pt-3"></div>
-            </div>
-        </main>
-
-        <!-- Modal -->
-        <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title font-weight-semi-bold" id="infoModalTitle">Modal title</h2>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <h3 id="infoModalSubtitle">Subtitle</h3>
-                        <p id="infoModalDescription">Description</p>
-                        <div id="infoModalLinks"></div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-dark btn-lg text-dark" data-dismiss="modal"><i class='fas fa-times pr-2'></i>Close</button>
-                    </div>
-                </div>
-            </div>
+<body>
+    {% include header.html %}
+	<div class="Layout mt-4 text-center">
+		<div class="Layout-sidebar"> <img class="avatar" src="/assets/adamfleishaker.jpg" /> </div>
+		<div class="Layout-main">
+			<p class="f00-light">{{site.name}}</p>
+			<p class="f3-light col-10 mx-auto balance-text">{{site.description}}</p>
+		</div>
+	</div>
+    <div class="col-8 mx-auto mt-4 text-center">
+        <div class="TimelineItem">
+            <div class="TimelineItem-badge"> <img class="TimelineIcon" src="/assets/dss.png"> </div>
+            <div class="TimelineItem-body"> <span class="Counter">June 2021&mdash;present</span> <span class="Label">Full-time</span> <span class="text-bold">Associate Software Engineer</span> &mdash; Disney Streaming Services</div>
         </div>
+        <div class="TimelineItem">
+            <div class="TimelineItem-badge"> <img class="TimelineIcon" src="/assets/deis.png"> </div>
+            <div class="TimelineItem-body"> <span class="Counter">May 2021</span> <span class="Label">Education</span> <span class="text-bold">Graduated with a B.S. in Computer Science & Business</span> &mdash; Brandeis University</div>
+        </div>
+        <div class="TimelineItem">
+            <div class="TimelineItem-badge"> <img class="TimelineIcon" src="/assets/dss.png"> </div>
+            <div class="TimelineItem-body"> <span class="Counter">Summer 2020</span> <span class="Label">Internship</span> <span class="text-bold">Software Engineering Intern</span> &mdash; Disney Streaming Services</div>
+        </div>
+        <div class="TimelineItem">
+            <div class="TimelineItem-badge"> <img class="TimelineIcon" src="/assets/dss.png"> </div>
+            <div class="TimelineItem-body"> <span class="Counter">Summer 2019</span> <span class="Label">Internship</span> <span class="text-bold">Software Engineering Intern</span> &mdash; Disney Streaming Services</div>
+        </div>
+        <div class="TimelineItem">
+            <div class="TimelineItem-badge"> <img class="TimelineIcon" src="/assets/apptopia.png"> </div>
+            <div class="TimelineItem-body"> <span class="Counter">Summer 2018</span>  <span class="Label">Internship</span> <span class="text-bold">Growth Marketing & Technical Intern</span> &mdash; Apptopia</div>
+        </div>
+      </div>
+	<script src="/js/personal.js"></script>
+</body>
 
-        <!-- Script - Triggers Bootstrap Material and gets reused/parameterized views -->
-        <script>
-            function createButton(url, classes, icon, text){
-                return `<a ${url ? 'href="' + url + '"' : ''}
-                        class='btn ${classes ? classes : 'btn-outline-dark btn-lg text-dark'}'
-                        role='button'>
-                        ${icon ? '<i class="' + icon + ' pr-2" />' : ''}
-                        ${text}
-                        </a>`
-            }
-
-            function createButtonGroup(buttons){
-                var output = `<div class="text-center"><div class="btn-group-lg btn-group-vertical">`
-                for(i=0; i<buttons.length; i++){
-                    output += createButton(buttons[i].url, buttons[i].classes, buttons[i].icon, buttons[i].text)
-                }
-                return output + `</div></div>`
-            }
-
-            $(document).ready(function () {
-                $('body').bootstrapMaterialDesign();
-
-                $.get("/nav.html", {}, function (data) {
-                    $("#nav").html(data);
-                });
-
-                $.getJSON('/projects.json', function(json_data) {
-                    let projects = json_data;
-                    for (let i = 0; i < projects.length; i++) {
-                        $.get("/card.html", {}, function (data) {
-                            data = $(data)
-                            data.attr("data-toggle", "modal");
-                            data.attr("data-target", "#infoModal");
-                            data.attr("data-modal-title", projects[i]['title']);
-                            data.attr("data-modal-subtitle", projects[i]['subtitle']);
-                            data.attr("data-modal-description", projects[i]['description']);
-                            data.attr("data-modal-links", createButtonGroup(projects[i]['modal_links']));
-
-                            img = data.children(0).children(0).first();
-                            img.attr("src", projects[i]['img']);
-
-                            body = data.children(0).children(1).last().children(0);
-                            body.eq(0).html(projects[i]['title']);
-                            body.eq(1).html(projects[i]['subtitle']);
-                            body.eq(2).html(projects[i]['summary']);
-                            body.eq(3).html(createButtonGroup(projects[i]['button']));
-
-                            $('#projects').append(data);
-                        });
-                    }
-                });
-
-                $('#infoModal').on('show.bs.modal', function (event) {
-                    let button = $(event.relatedTarget);
-                    $("#infoModalTitle").text(button.data('modal-title'));
-                    $("#infoModalSubtitle").text(button.data('modal-subtitle'));
-                    $("#infoModalDescription").html(button.data('modal-description'));
-                    $("#infoModalLinks").html(button.data('modal-links'));
-                });
-            });
-        </script>
-    </body>
 </html>
