@@ -16,11 +16,10 @@
 title: adamfleishaker.com
 name: Adam Fleishaker
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi there! I'm Adam, a recent grad in Computer Science
-  and Business at Brandeis University with a passion
-  for programming, entrepreneurship, and civic tech.
-  When not programming a personal project, you can find
-  me singing a cappella or doing graphic design!
+  Hi there! I'm Adam, a graduate in Computer Science
+  and Business from Brandeis University with a passion
+  for entrepreneurship and civic tech. When not programming, 
+  you can find me singing a cappella or doing graphic design!
 url: "https://adamfleishaker.com" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin: adamfleishaker
 github: afleishaker
