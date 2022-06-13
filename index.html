@@ -2,119 +2,118 @@
 ---
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<!-- Metadata -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="google-site-verification" content="fRd6qhqb-5nYArNWfLnkRf2tUDEAwfc7XA4drtnsiUo">
-    
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="google-site-verification" content="fRd6qhqb-5nYArNWfLnkRf2tUDEAwfc7XA4drtnsiUo">
+
     <meta property='og:title' content="{{site.name}}"/>
     <meta property='og:image' content="https://adamfleishaker.com/assets/adamfleishaker.jpg"/>
     <meta property='og:description' content="{{site.description}}"/>
-    <meta property='og:url' content="https://adamfleishaker.com/>
+    <meta property='og:url' content="https://adamfleishaker.com/">
 
-    <link rel="icon" href="/assets/favicon.ico">
-	<title>{{site.name}}</title>
-	<!-- CSS assets -->
-	<link rel="stylesheet" href="https://unpkg.com/@primer/css@^16.0.0/dist/primer.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha256-BYjRZhSY2ARUPcFTf5eEh3qWK58O88TM7nZet/JUNhE=" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/solid.min.css" integrity="sha256-iC5YxnGkhNDaqXooBwYOGhrRbnOod1P0lKCo8kQSFks=" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/brands.min.css" integrity="sha256-cdja5yXsTdglBOJNQM9uVniw4C0oiIpo9rhIiofUJN0=" crossorigin="anonymous">
-        <link rel="stylesheet" href="/css/animate.min.css">
-	<link rel="stylesheet" href="/css/personal.css">
-	<!-- JS assets -->
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/3.3.0/balancetext.min.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <title>{{site.name}}</title>
+
+    <!-- CSS assets -->
+    <link rel="stylesheet" href="https://unpkg.com/@primer/css@^16.0.0/dist/primer.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha256-BYjRZhSY2ARUPcFTf5eEh3qWK58O88TM7nZet/JUNhE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/solid.min.css" integrity="sha256-iC5YxnGkhNDaqXooBwYOGhrRbnOod1P0lKCo8kQSFks=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/brands.min.css" integrity="sha256-cdja5yXsTdglBOJNQM9uVniw4C0oiIpo9rhIiofUJN0=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/animate.min.css">
+    <link rel="stylesheet" href="/css/personal.css">
+
+    <!-- JS assets -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/3.3.0/balancetext.min.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    {% include header.html %}
-	<div class="Layout mt-4 text-center">
-		<div class="Layout-sidebar"> 
-            <img class="avatar" src="/assets/adamfleishaker.jpg" /> 
+{% include header.html %}
+<div class="Layout mt-4 text-center">
+    <div class="Layout-sidebar">
+        <img class="avatar" src="/assets/adamfleishaker.jpg" />
+    </div>
+    <div class="Layout-main">
+        <p class="f00-light">{{site.name}}</p>
+        <p class="f3-light col-10 mx-auto balance-text">{{site.description}}</p>
+    </div>
+</div>
+<div class="col-8 mx-auto mt-4 text-center">
+    <div class="TimelineItem">
+        <div class="TimelineItem-badge">
+            <img class="TimelineIcon" src="/assets/disney.png">
         </div>
-		<div class="Layout-main">
-			<p class="f00-light">{{site.name}}</p>
-			<p class="f3-light col-10 mx-auto balance-text">{{site.description}}</p>
-		</div>
-	</div>
-    <div class="col-8 mx-auto mt-4 text-center">
-        <div class="TimelineItem">
-            <div class="TimelineItem-badge"> 
-                <img class="TimelineIcon" src="/assets/dss.png"> 
-            </div>
-            <div class="TimelineItem-body"> 
-                <span class="Counter">June 2021&mdash;present</span> 
-                <span class="Label">Full-time</span> 
-                <span class="Entry">
+        <div class="TimelineItem-body">
+            <span class="Counter">June 2021&mdash;present</span>
+            <span class="Label">Full-time</span>
+            <span class="Entry">
                     <a href="http://disneystreaming.com" class="Link--primary no-underline">
-                        <span class="text-bold">Associate Software Engineer</span> &mdash; Disney Streaming Services
+                        <span class="text-bold">Software Engineer I</span> &mdash; Disney Streaming
                     </a>
                 </span>
-            </div>
         </div>
-        <div class="TimelineItem">
-            <div class="TimelineItem-badge"> 
-                <img class="TimelineIcon" src="/assets/deis.png"> 
-            </div>
-            <div class="TimelineItem-body"> 
-                <span class="Counter">May 2021</span> 
-                <span class="Label">Education</span> 
-                <span class="Entry">
+    </div>
+    <div class="TimelineItem">
+        <div class="TimelineItem-badge">
+            <img class="TimelineIcon" src="/assets/deis.png">
+        </div>
+        <div class="TimelineItem-body">
+            <span class="Counter">May 2021</span>
+            <span class="Label">Education</span>
+            <span class="Entry">
                     <a href="/assets/diploma.pdf" class="Link--primary no-underline">
                         <span class="text-bold">Graduated with a B.S. in Computer Science & Business</span> &mdash; Brandeis University
                     </a>
                 </span>
-            </div>
         </div>
-        <div class="TimelineItem">
-            <div class="TimelineItem-badge">
-                <img class="TimelineIcon" src="/assets/dss.png"> 
-            </div>
-            <div class="TimelineItem-body"> 
-                <span class="Counter">Summer 2020</span> 
-                <span class="Label">Internship</span> 
-                <span class="Entry">
+    </div>
+    <div class="TimelineItem">
+        <div class="TimelineItem-badge">
+            <img class="TimelineIcon" src="/assets/dss.png">
+        </div>
+        <div class="TimelineItem-body">
+            <span class="Counter">Summer 2020</span>
+            <span class="Label">Internship</span>
+            <span class="Entry">
                     <a href="http://disneystreaming.com" class="Link--primary no-underline">
                         <span class="text-bold">Software Engineering Intern</span> &mdash; Disney Streaming Services
                     </a>
                 </span>
-            </div>
         </div>
-        <div class="TimelineItem">
-            <div class="TimelineItem-badge"> 
-                <img class="TimelineIcon" src="/assets/dss.png"> 
-            </div>
-            <div class="TimelineItem-body"> 
-                <span class="Counter">Summer 2019</span> 
-                <span class="Label">Internship</span> 
-                <span class="Entry">
+    </div>
+    <div class="TimelineItem">
+        <div class="TimelineItem-badge">
+            <img class="TimelineIcon" src="/assets/dss.png">
+        </div>
+        <div class="TimelineItem-body">
+            <span class="Counter">Summer 2019</span>
+            <span class="Label">Internship</span>
+            <span class="Entry">
                     <a href="http://disneystreaming.com" class="Link--primary no-underline">
                         <span class="text-bold">Software Engineering Intern</span> &mdash; Disney Streaming Services
                     </a>
                 </span>
-            </div>
         </div>
-        <div class="TimelineItem">
-            <div class="TimelineItem-badge"> 
-                <img class="TimelineIcon" src="/assets/apptopia.png"> 
-            </div>
-            <div class="TimelineItem-body"> 
-                <span class="Counter">Summer 2018</span>  
-                <span class="Label">Internship</span> 
-                <span class="Entry">
+    </div>
+    <div class="TimelineItem">
+        <div class="TimelineItem-badge">
+            <img class="TimelineIcon" src="/assets/apptopia.png">
+        </div>
+        <div class="TimelineItem-body">
+            <span class="Counter">Summer 2018</span>
+            <span class="Label">Internship</span>
+            <span class="Entry">
                     <a href="http://apptopia.com" class="Link--primary no-underline">
                         <span class="text-bold">Growth Marketing & Technical Intern</span> &mdash; Apptopia
                     </a>
                 </span>
-            </div>
         </div>
-      </div>
-	<script src="/js/personal.js"></script>
+    </div>
+</div>
+<script src="/js/personal.js"></script>
 </body>
-
 </html>
