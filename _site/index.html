@@ -1,5 +1,3 @@
----
----
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="google-site-verification" content="fRd6qhqb-5nYArNWfLnkRf2tUDEAwfc7XA4drtnsiUo">
 
-    <meta property='og:title' content="{{site.name}}"/>
+    <meta property='og:title' content="Adam Fleishaker"/>
     <meta property='og:image' content="https://adamfleishaker.com/assets/adamfleishaker.jpg"/>
-    <meta property='og:description' content="{{site.description}}"/>
+    <meta property='og:description' content="Hi there! I'm Adam, a software engineer, New Yorker, and Brandeis University '21 alum with a passion for devops, automation, growth marketing and helping others. I love bringing people and various ideas  & resources together to solve any challenge. When not programming, you can find me singing a cappella or developing various graphic designs or projects!"/>
     <meta property='og:url' content="https://adamfleishaker.com/">
 
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <title>{{site.name}}</title>
+    <title>Adam Fleishaker</title>
 
     <!-- CSS assets -->
     <link href="https://unpkg.com/@primer/css@^20.2.4/dist/primer.css" rel="stylesheet" />
@@ -32,12 +30,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/3.3.0/balancetext.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
-{% include header.html %}
+<div class="Header">
+    <div class="Header-item">
+        <a href="#" class="Header-link f4 d-flex flex-items-center"> <i class="fas fa-laptop-code mr-2"></i> <span>Adam Fleishaker</span> </a>
+    </div>
+    <div class="Header-item"> <a href="https://linkedin.com/in/adamfleishaker" class="Header-link"><i class="fab fa-linkedin-in"></i></a> </div>
+    <div class="Header-item"> <a href="https://github.com/afleishaker" class="Header-link"><i class="fab fa-github-alt"></i></a> </div>
+    <div class="Header-item Header-item--full"> <a href="/assets/resume.pdf" class="Header-link"><i class="fas fa-file-alt"></i></a> </div>
+    <div class="Header-item mr-0">
+        <button class="btn" id="toggle"><i class="fas fa-moon" id="toggle-icon"></i></button>
+    </div>
+</div>
 <div class="col-8 mx-auto mt-4 text-center">
     <div class="Layout-main">
         <img class="CircleBadge CircleBadge--large d-inline-block" src="/assets/avatar.png" />
-        <p class="h3-mktg">{{site.name}}</p>
-        <p class="f3-light col-10 mx-auto balance-text">{{site.description}}</p>
+        <p class="h3-mktg">Adam Fleishaker</p>
+        <p class="f3-light col-10 mx-auto balance-text">Hi there! I'm Adam, a software engineer, New Yorker, and Brandeis University '21 alum with a passion for devops, automation, growth marketing and helping others. I love bringing people and various ideas  & resources together to solve any challenge. When not programming, you can find me singing a cappella or developing various graphic designs or projects!</p>
     </div>
 </div>
 <div class="col-8 mx-auto mt-4 text-center">
