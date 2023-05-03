@@ -2,14 +2,14 @@ function toggleMode(dark, storage) {
     if(dark) {
         document.documentElement.setAttribute('data-color-mode', 'light');
         document.documentElement.setAttribute('data-light-theme', 'light');
-        document.getElementById('toggle-icon').className = "fas fa-moon";
+        document.getElementById('toggle-icon').setAttribute('icon', 'fluent-emoji:crescent-moon');
         if(storage) {
             localStorage.theme = 'light';
         }
     } else {
         document.documentElement.setAttribute('data-color-mode', 'dark');
         document.documentElement.setAttribute('data-dark-theme', 'dark');
-        document.getElementById('toggle-icon').className = "fas fa-sun";
+        document.getElementById('toggle-icon').setAttribute('icon', 'fluent-emoji:sun');
         if(storage) {
             localStorage.theme = 'dark';
         }

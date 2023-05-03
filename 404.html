@@ -14,9 +14,9 @@
     <meta property='og:title' content="{{site.name}}"/>
     <meta property='og:image' content="https://adamfleishaker.com/assets/adamfleishaker.jpg"/>
     <meta property='og:description' content="{{site.description}}"/>
-    <meta property='og:url' content="https://adamfleishaker.com/>
+    <meta property='og:url' content="https://adamfleishaker.com/">
 
-    <link rel="icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/assets/adamfleishaker.png">
     <title>{{site.name}}</title>
     <!-- CSS assets -->
     <link href="https://unpkg.com/@primer/css@^20.2.4/dist/primer.css" rel="stylesheet" />
@@ -30,12 +30,13 @@
     <!-- JS assets -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/3.3.0/balancetext.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 </head>
 
 <body>
     {% include header.html %}
     <div class="blankslate text-center">
-        <h1 class="animated infinite tada pt-3 blankslate-icon"><i class="fas fa-exclamation-triangle fa-2x pb-3"></i></h1>
+        <h1 class="animated infinite tada pt-3 blankslate-icon"><iconify-icon icon="fluent-emoji:red-question-mark" class="fa-4x pb-3"></iconify-icon></h1>
         <h3 class="blankslate-heading">You've encountered a removed/currently unavailable path.</h3>
         <p class="balance-text pb-2">Please use the navigation above or try again later.</p>
         <p class="balance-text pb-4"><a class="btn" href="/" type="button">Return to the homepage</a></p>
