@@ -14,117 +14,126 @@
     <meta property='og:description' content="{{site.description}}"/>
     <meta property='og:url' content="https://adamfleishaker.com/">
 
-    <link rel="icon" type="image/x-icon" href="/assets/adamfleishaker.png">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <title>{{site.name}}</title>
 
     <!-- CSS assets -->
-    <link href="https://unpkg.com/@primer/css@^20.2.4/dist/primer.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@primer/css@^20.2.4/dist/primer.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha256-BYjRZhSY2ARUPcFTf5eEh3qWK58O88TM7nZet/JUNhE=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/solid.min.css" integrity="sha256-iC5YxnGkhNDaqXooBwYOGhrRbnOod1P0lKCo8kQSFks=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/brands.min.css" integrity="sha256-cdja5yXsTdglBOJNQM9uVniw4C0oiIpo9rhIiofUJN0=" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+          integrity="sha256-BYjRZhSY2ARUPcFTf5eEh3qWK58O88TM7nZet/JUNhE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/solid.min.css"
+          integrity="sha256-iC5YxnGkhNDaqXooBwYOGhrRbnOod1P0lKCo8kQSFks=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/brands.min.css"
+          integrity="sha256-cdja5yXsTdglBOJNQM9uVniw4C0oiIpo9rhIiofUJN0=" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/animate.min.css">
     <link rel="stylesheet" href="/css/personal.css">
 
     <!-- JS assets -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/3.3.0/balancetext.min.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/3.3.0/balancetext.min.js"
+            crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 </head>
 <body>
 {% include header.html %}
-<div class="col-8 mx-auto mt-4 text-center">
-    <div class="Layout-main">
-        <img class="CircleBadge CircleBadge--large d-inline-block" src="/assets/adamfleishaker.png" />
-        <p class="h3-mktg">{{site.name}}</p>
-        <p class="f3-light col-10 mx-auto balance-text">{{site.description}}</p>
-    </div>
+<div class="col-11 mx-auto mt-4 text-center">
+    <section class="nes-container with-title">
+        <p class="title">{{site.name}}</p>
+        <section class="message-list">
+            <section class="message -left mx-auto">
+                <img class="profile-avatar" src="/assets/adamanimated.gif"/>
+                <div class="nes-balloon from-left f6">
+                    <p>{{site.description}}</p>
+                </div>
+            </section>
+            <section class="message -right mx-auto">
+                <div class="nes-balloon from-right f6">
+                    <p>I love bringing people and various ideas & resources
+                        together to solve any challenge. When not programming, you can find
+                        me singing a cappella or developing various graphic designs or projects!</p>
+                </div>
+                <img class="profile-avatar" src="/assets/adamanimated.gif"/>
+            </section>
+        </section>
+    </section>
 </div>
-<div class="col-8 mx-auto mt-4 text-center">
-    <div class="TimelineItem">
-        <div class="TimelineItem-badge">
-            <img class="TimelineIcon" src="/assets/disney.png">
-        </div>
-        <div class="TimelineItem-body">
-            <span class="Counter">July 2022&mdash;present</span>
-            <span class="Label">Full-time</span>
-            <span class="Entry">
-                    <a href="http://disneystreaming.com" class="Link--primary no-underline">
-                        <span class="text-bold">Software Engineer II</span> &mdash; Disney Streaming
+<div class="col-11 mx-auto mt-4">
+    <div class="lists">
+        <ul class="nes-list">
+            <li class="TimelineItem">
+                <div class="TimelineItem-body">
+                    <span class="Counter">July 2022&mdash;present</span>
+                    <span class="Label">Full-time</span>
+                    <span class="Entry">
+                    <a href="https://thewaltdisneycompany.com/" class="Link--primary no-underline">
+                        <span class="text-bold">Software Engineer II</span> &mdash; Disney Entertainment & ESPN
                     </a>
                 </span>
-        </div>
-    </div>
-    <div class="TimelineItem">
-        <div class="TimelineItem-badge">
-            <img class="TimelineIcon" src="/assets/disney.png">
-        </div>
-        <div class="TimelineItem-body">
-            <span class="Counter">June 2021&mdash;2022</span>
-            <span class="Label">Full-time</span>
-            <span class="Entry">
+                </div>
+            </li>
+            <li class="TimelineItem">
+                <div class="TimelineItem-body">
+                    <span class="Counter">June 2021&mdash;2022</span>
+                    <span class="Label">Full-time</span>
+                    <span class="Entry">
                     <a href="http://disneystreaming.com" class="Link--primary no-underline">
                         <span class="text-bold">Software Engineer I</span> &mdash; Disney Streaming
                     </a>
                 </span>
-        </div>
-    </div>
-    <div class="TimelineItem">
-        <div class="TimelineItem-badge">
-            <img class="TimelineIcon" src="/assets/deis.png">
-        </div>
-        <div class="TimelineItem-body">
-            <span class="Counter">May 2021</span>
-            <span class="Label">Education</span>
-            <span class="Entry">
+                </div>
+            </li>
+            <li class="TimelineItem">
+                <div class="TimelineItem-body">
+                    <span class="Counter">May 2021</span>
+                    <span class="Label">Education</span>
+                    <span class="Entry">
                     <a href="/assets/diploma.pdf" class="Link--primary no-underline">
                         <span class="text-bold">Graduated with a B.S. in Computer Science & Business</span> &mdash; Brandeis University
                     </a>
                 </span>
-        </div>
-    </div>
-    <div class="TimelineItem">
-        <div class="TimelineItem-badge">
-            <img class="TimelineIcon" src="/assets/dss.png">
-        </div>
-        <div class="TimelineItem-body">
-            <span class="Counter">Summer 2020</span>
-            <span class="Label">Internship</span>
-            <span class="Entry">
+                </div>
+            </li>
+            <li class="TimelineItem">
+                <div class="TimelineItem-body">
+                    <span class="Counter">Summer 2020</span>
+                    <span class="Label">Internship</span>
+                    <span class="Entry">
                     <a href="http://disneystreaming.com" class="Link--primary no-underline">
                         <span class="text-bold">Software Engineering Intern</span> &mdash; Disney Streaming Services
                     </a>
                 </span>
-        </div>
-    </div>
-    <div class="TimelineItem">
-        <div class="TimelineItem-badge">
-            <img class="TimelineIcon" src="/assets/dss.png">
-        </div>
-        <div class="TimelineItem-body">
-            <span class="Counter">Summer 2019</span>
-            <span class="Label">Internship</span>
-            <span class="Entry">
+                </div>
+            </li>
+            <li class="TimelineItem">
+                <div class="TimelineItem-body">
+                    <span class="Counter">Summer 2019</span>
+                    <span class="Label">Internship</span>
+                    <span class="Entry">
                     <a href="http://disneystreaming.com" class="Link--primary no-underline">
                         <span class="text-bold">Software Engineering Intern</span> &mdash; Disney Streaming Services
                     </a>
                 </span>
-        </div>
-    </div>
-    <div class="TimelineItem">
-        <div class="TimelineItem-badge">
-            <img class="TimelineIcon" src="/assets/apptopia.png">
-        </div>
-        <div class="TimelineItem-body">
-            <span class="Counter">Summer 2018</span>
-            <span class="Label">Internship</span>
-            <span class="Entry">
+                </div>
+            </li>
+            <li class="TimelineItem">
+                <div class="TimelineItem-body">
+                    <span class="Counter">Summer 2018</span>
+                    <span class="Label">Internship</span>
+                    <span class="Entry">
                     <a href="http://apptopia.com" class="Link--primary no-underline">
                         <span class="text-bold">Growth Marketing & Technical Intern</span> &mdash; Apptopia
                     </a>
                 </span>
-        </div>
+                </div>
+            </li>
+        </ul>
     </div>
 </div>
 <script src="/js/personal.js"></script>
