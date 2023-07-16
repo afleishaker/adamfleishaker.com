@@ -3,28 +3,43 @@
     height: auto !important;
 }
 
+.replying {
+      transform: scaleX(-1);
+}
+
 .TimelineIcon {
     width: 24px !important;
     height: 24px !important;
 }
 
-.nes-list li:before {
-  content: '';
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: #D8D8D8;
-  position: absolute;
-  left: 0;
-      border-style: solid !important;
-      border-width: 4px !important;
-      border-image-slice: 3 !important;
-      border-image-width: 3 !important;
-      border-image-repeat: stretch !important;
-      border-image-source: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" ?><svg version="1.1" width="8" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M3 1 h1 v1 h-1 z M4 1 h1 v1 h-1 z M2 2 h1 v1 h-1 z M5 2 h1 v1 h-1 z M1 3 h1 v1 h-1 z M6 3 h1 v1 h-1 z M1 4 h1 v1 h-1 z M6 4 h1 v1 h-1 z M2 5 h1 v1 h-1 z M5 5 h1 v1 h-1 z M3 6 h1 v1 h-1 z M4 6 h1 v1 h-1 z" fill="rgb(33,37,41)" /></svg>') !important;
-      border-image-outset: 2 !important;
-      top: 24px;
-      z-index: 2;
+.nes-list li:not(:first-child):before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #D8D8D8;
+    position: absolute;
+    left: 0;
+    border-style: solid !important;
+    border-width: 4px !important;
+    border-image-slice: 3 !important;
+    border-image-width: 3 !important;
+    border-image-repeat: stretch !important;
+    border-image-source: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" ?><svg version="1.1" width="8" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M3 1 h1 v1 h-1 z M4 1 h1 v1 h-1 z M2 2 h1 v1 h-1 z M5 2 h1 v1 h-1 z M1 3 h1 v1 h-1 z M6 3 h1 v1 h-1 z M1 4 h1 v1 h-1 z M6 4 h1 v1 h-1 z M2 5 h1 v1 h-1 z M5 5 h1 v1 h-1 z M3 6 h1 v1 h-1 z M4 6 h1 v1 h-1 z" fill="rgb(33,37,41)" /></svg>') !important;
+    border-image-outset: 2 !important;
+    top: 24px;
+    z-index: 2;
+}
+
+.nes-list li:first-child:before {
+    width: 2px;
+    height: 2px;
+    color: #ebe527;
+    transform: scale(1.5);
+    top: 10px;
+    left: -5px;
+    z-index: 1;
+    box-shadow: 8px 1px #444,7px 2px #444,8px 2px,9px 2px #444,7px 3px #444,8px 3px,9px 3px #444,6px 4px #444,7px 4px,8px 4px,9px 4px,10px 4px #444,6px 5px #444,7px 5px #fff,8px 5px #fff,9px 5px,10px 5px #444,1px 6px #444,2px 6px #444,3px 6px #444,4px 6px #444,5px 6px #444,6px 6px #444,7px 6px #fff,8px 6px,9px 6px,10px 6px,11px 6px #444,12px 6px #444,13px 6px #444,14px 6px #444,15px 6px #444,1px 7px #444,2px 7px,3px 7px,4px 7px,5px 7px #fff,6px 7px #fff,7px 7px,8px 7px,9px 7px,10px 7px,11px 7px,12px 7px,13px 7px,14px 7px,15px 7px #444,2px 8px #444,3px 8px,4px 8px,5px 8px #fff,6px 8px,7px 8px,8px 8px,9px 8px,10px 8px,11px 8px,12px 8px,13px 8px #f59f54,14px 8px #444,3px 9px #444,4px 9px,5px 9px,6px 9px,7px 9px,8px 9px,9px 9px,10px 9px,11px 9px #f59f54,12px 9px #f59f54,13px 9px #444,4px 10px #444,5px 10px,6px 10px,7px 10px,8px 10px,9px 10px,10px 10px,11px 10px,12px 10px #444,3px 11px #444,4px 11px,5px 11px,6px 11px,7px 11px,8px 11px #f59f54,9px 11px,10px 11px,11px 11px,12px 11px,13px 11px #444,3px 12px #444,4px 12px,5px 12px,6px 12px,7px 12px #f59f54,8px 12px #f59f54,9px 12px #f59f54,10px 12px,11px 12px,12px 12px,13px 12px #444,2px 13px #444,3px 13px,4px 13px,5px 13px #f59f54,6px 13px #f59f54,7px 13px #f59f54,8px 13px #444,9px 13px #f59f54,10px 13px #f59f54,11px 13px #f59f54,12px 13px,13px 13px,14px 13px #444,2px 14px #444,3px 14px,4px 14px #f59f54,5px 14px #f59f54,6px 14px #444,7px 14px #444,9px 14px #444,10px 14px #444,11px 14px #f59f54,12px 14px #f59f54,13px 14px,14px 14px #444,1px 15px #444,2px 15px #f59f54,3px 15px #f59f54,4px 15px #444,5px 15px #444,11px 15px #444,12px 15px #444,13px 15px #f59f54,14px 15px #f59f54,15px 15px #444,1px 16px #444,2px 16px #444,3px 16px #444,13px 16px #444,14px 16px #444,15px 16px #444;
 }
 
 .nes-list li:not(:last-child):after {
@@ -78,43 +93,43 @@ body {
 @import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 
 .item.containers > .nes-container {
-  display: inline-block;
-  max-width: 400px;
+    display: inline-block;
+    max-width: 400px;
 }
 
 section.message-list {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .message-list > .message {
-  display: flex;
-  margin-top: 2rem;
-  justify-content: space-around;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-around;
 }
 
 .message-list > .message > .nes-balloon {
-  max-width: 550px;
+    max-width: 550px;
 }
 
 .message-list > .message img {
-  align-self: flex-end;
+    align-self: flex-end;
 }
 
 .message-list > .message.-left {
-  align-self: flex-start;
+    align-self: flex-start;
 }
 
 .message-list > .message.-right {
-  align-self: flex-end;
+    align-self: flex-end;
 }
 
 .message-list > .message.-left img {
-  margin-right: 2rem;
+    margin-right: 2rem;
 }
 
 .message-list > .message.-right img {
-  margin-left: 2rem;
+    margin-left: 2rem;
 }
 
 .nes-balloon {
