@@ -11,6 +11,10 @@
     100% {box-shadow: var(--adam-sprite-neutral);}
 }
 
+.cred-badge {
+    height: 9em
+}
+
 .missing-link {
     width: 1px !important;
     height: 1px !important;
