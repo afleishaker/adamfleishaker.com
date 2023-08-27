@@ -31,28 +31,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/3.3.0/balancetext.min.js"
             crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
 <body>
 {% include header.html %}
-<div class="col-11 mx-auto mt-4 text-center">
-    <section class="nes-container with-title">
+<div class="mx-auto mt-4 text-center">
+    <section class="nes-container with-title is-dark">
         <p class="title">{{site.name}}</p>
-        <section class="message-list">
-            <section class="message -left mx-auto">
-                <img class="profile-avatar" src="/assets/adamanimated.gif"/>
-                <div class="nes-balloon from-left f6">
-                    <p>{{site.description}}</p>
-                </div>
-            </section>
-            <section class="message -right mx-auto">
-                <div class="nes-balloon from-right f6">
-                    <p>I love bringing people and various ideas & resources
-                        together to solve any challenge. When not programming, you can find
-                        me singing a cappella or developing various graphic designs or projects!</p>
-                </div>
-                <img class="profile-avatar replying" src="/assets/adamanimated.gif"/>
-            </section>
-        </section>
+        <div class="d-flex flex-items-center">
+            <img class="profile-avatar" src="/assets/adamtalk.gif"/>
+            <p id="intro-text" class="pl-4 m-0"></p>
+        </div>
     </section>
 </div>
 <div class="col-11 mx-auto mt-4">
@@ -135,6 +124,26 @@
         <a href="https://www.credly.com/badges/95c399e4-9a0d-472b-bd7f-6d04df7a90dc/public_url"><img class="cred-badge Header-link" src="/assets/cloudpractitioner.png"></a>
     </section>
 </div>
-<script src="/js/personal.js"></script>
+<script>
+    balanceText();
+
+    $(document).ready(function () {
+        $(".Header-link").hover( function() {
+            $(this).addClass( "animated infinite tada" );
+        }, function(){
+            $(this).removeClass( "animated infinite tada" );
+        });
+
+        new Typed('#intro-text', {
+          strings: ["{{site.description}}"],
+          typeSpeed: 50,
+          showCursor: false,
+          onComplete: function(self) {
+            $(".profile-avatar").attr("src","/assets/adamsmile.gif");
+          }
+        });
+
+    });
+</script>
 </body>
 </html>
