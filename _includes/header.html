@@ -1,14 +1,24 @@
-<div class="Header">
-    <div class="Header-item Header-item--full">
-        <a href="/#" class="Header-link f6 d-flex flex-items-center"><i><img style="height:4.5em" src="/assets/adamprofile.png"></i>&nbsp;<span>{{site.name}}</span></a>
+<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand hover-interact" href="/#">
+            <img style="height:3em" class="d-inline-block" src="/assets/adamprofile.png">
+            {{site.name}}
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="nes-drop">»</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="https://github.com/{{site.github}}" class="nav-link icon-link text-white hover-interact"><i class="nes-icon github"></i> GitHub</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://linkedin.com/in/{{site.linkedin}}" class="nav-link icon-link text-white hover-interact"><i class="nes-icon linkedin"></i> LinkedIn</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/assets/resume.pdf" class="nav-link icon-link text-white hover-interact"><i class="nes-icon resume-file"></i> Resume</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="Header-item">
-        <a href="https://github.com/{{site.github}}" class="Header-link"><i class="nes-icon github"></i></a>
-    </div>
-    <div class="Header-item">
-        <a href="https://linkedin.com/in/{{site.linkedin}}" class="Header-link"><i class="nes-icon linkedin"></i></a>
-    </div>
-    <div class="Header-item">
-        <a href="/assets/resume.pdf" class="Header-link"><i class="nes-icon resume-file"></i></a>
-    </div>
-</div>
+</nav>
