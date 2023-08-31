@@ -129,7 +129,6 @@
                     var scrollDist = ($(window).scrollTop() + $(window).height());
                     var finalScrollDist = scrollDist-initScrollDist;
                     var dist = listDist*(finalScrollDist/($(document).height()-initScrollDist));
-                    var finalDist = Math.min(initScrollDist, dist);
                     $(".adam-yay").css("top", dist);
                 }, true);
             });
