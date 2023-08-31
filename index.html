@@ -52,35 +52,14 @@
         </div>
         <div class="col-8 mx-auto mt-4">
             <section class="nes-container with-title">
-                <p class="title">Timeline</p>
-                <i class="nes-icon adam-yay"></i>
+                <p class="title">My Journey</p>
+                <i class="nes-icon adam-nav adam-walk"></i>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
-                        <span class="badge bg-dark">July 2022&mdash;present</span>
-                        <span class="badge bg-primary">Full-time</span>
-                        <a href="https://thewaltdisneycompany.com/" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
-                            <span class="text-bold">Software Engineer II</span> &mdash; Disney Entertainment & ESPN
-                        </a>
-                    </li>
-                    <li class="list-group-item mt-4">
-                        <span class="badge bg-dark">June 2021&mdash;2022</span>
-                        <span class="badge bg-primary">Full-time</span>
-                        <a href="http://disneystreaming.com" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
-                            <span class="text-bold">Software Engineer I</span> &mdash; Disney Streaming
-                        </a>
-                    </li>
-                    <li class="list-group-item mt-4">
-                        <span class="badge bg-dark">May 2021</span>
-                        <span class="badge bg-success">Education</span>
-                        <a href="/assets/diploma.pdf" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
-                            <span class="text-bold">Graduated with a B.S. in Computer Science & Business</span> &mdash; Brandeis University
-                        </a>
-                    </li>
-                    <li class="list-group-item mt-4">
-                        <span class="badge bg-dark">Summer 2020</span>
+                        <span class="badge bg-dark">Summer 2018</span>
                         <span class="badge bg-warning">Internship</span>
-                        <a href="http://disneystreaming.com" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
-                            <span class="text-bold">Software Engineering Intern</span> &mdash; Disney Streaming Services
+                        <a href="http://apptopia.com" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+                            <span class="text-bold">Growth Marketing & Technical Intern</span> &mdash; Apptopia
                         </a>
                     </li>
                     <li class="list-group-item mt-4">
@@ -91,10 +70,31 @@
                         </a>
                     </li>
                     <li class="list-group-item mt-4">
-                        <span class="badge bg-dark">Summer 2018</span>
+                        <span class="badge bg-dark">Summer 2020</span>
                         <span class="badge bg-warning">Internship</span>
-                        <a href="http://apptopia.com" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
-                            <span class="text-bold">Growth Marketing & Technical Intern</span> &mdash; Apptopia
+                        <a href="http://disneystreaming.com" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+                            <span class="text-bold">Software Engineering Intern</span> &mdash; Disney Streaming Services
+                        </a>
+                    </li>
+                    <li class="list-group-item mt-4 list-school">
+                        <span class="badge bg-dark">May 2021</span>
+                        <span class="badge bg-success">Education</span>
+                        <a href="/assets/diploma.pdf" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+                            <span class="text-bold">Graduated with a B.S. in Computer Science & Business</span> &mdash; Brandeis University
+                        </a>
+                    </li>
+                    <li class="list-group-item mt-4 list-full-time">
+                        <span class="badge bg-dark">June 2021&mdash;2022</span>
+                        <span class="badge bg-primary">Full-time</span>
+                        <a href="http://disneystreaming.com" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+                            <span class="text-bold">Software Engineer I</span> &mdash; Disney Streaming
+                        </a>
+                    </li>
+                    <li class="list-group-item mt-4">
+                        <span class="badge bg-dark">July 2022&mdash;present</span>
+                        <span class="badge bg-primary">Full-time</span>
+                        <a href="https://thewaltdisneycompany.com/" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+                            <span class="text-bold">Software Engineer II</span> &mdash; Disney Entertainment & ESPN
                         </a>
                     </li>
                 </ul>
@@ -120,7 +120,7 @@
                   }
                 });
 
-                var initScrollDist = ($(window).scrollTop() + $(window).height());
+                var initScrollDist = $(window).height();
 
                 document.addEventListener('scroll', function (event) {
                     var firstTop =  $('.list-group-item').first().offset().top;
@@ -129,7 +129,24 @@
                     var scrollDist = ($(window).scrollTop() + $(window).height());
                     var finalScrollDist = scrollDist-initScrollDist;
                     var dist = listDist*(finalScrollDist/($(document).height()-initScrollDist));
-                    $(".adam-yay").css("top", dist);
+                    $(".adam-nav").css("top", dist);
+
+                    var schoolTop = $('.list-school').offset().top;
+                    var fullTimeTop = $('.list-full-time').offset().top;
+                    if ((dist + firstTop) < schoolTop) {
+                        $(".adam-nav").addClass("adam-walk");
+                        $(".adam-nav").removeClass("adam-celebrate");
+                        $(".adam-nav").removeClass("adam-graduate");
+                    }
+                    else if ((dist + firstTop) < fullTimeTop) {
+                        $(".adam-nav").removeClass("adam-walk");
+                        $(".adam-nav").removeClass("adam-celebrate");
+                        $(".adam-nav").addClass("adam-graduate");
+                    } else {
+                        $(".adam-nav").removeClass("adam-walk");
+                        $(".adam-nav").addClass("adam-celebrate");
+                        $(".adam-nav").removeClass("adam-graduate");
+                    }
                 }, true);
             });
         </script>
