@@ -120,15 +120,11 @@
                   }
                 });
 
-                var initScrollDist = $(window).height();
-
-                document.addEventListener('scroll', function (event) {
+                function updateTimelineScroller() {
                     var firstTop =  $('.list-group-item').first().offset().top;
                     var lastTop =  $('.list-group-item').last().offset().top;
-                    var listDist = lastTop - firstTop;
-                    var scrollDist = ($(window).scrollTop() + $(window).height());
-                    var finalScrollDist = scrollDist-initScrollDist;
-                    var dist = listDist*(finalScrollDist/($(document).height()-initScrollDist));
+                    var percentScrolled = $(window).scrollTop()/($(document).height()-$(window).height());
+                    var dist = (lastTop - firstTop) * percentScrolled;
                     $(".adam-nav").css("top", dist);
 
                     var schoolTop = $('.list-school').offset().top;
@@ -147,6 +143,10 @@
                         $(".adam-nav").addClass("adam-celebrate");
                         $(".adam-nav").removeClass("adam-graduate");
                     }
+                }
+
+                document.addEventListener('scroll', function (event) {
+                    updateTimelineScroller();
                 }, true);
             });
         </script>
