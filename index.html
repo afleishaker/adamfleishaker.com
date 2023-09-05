@@ -35,8 +35,8 @@
     </head>
     <body>
         {% include header.html %}
-        <div class="mx-auto mt-4 text-center">
-            <section class="nes-container with-title is-dark">
+        <div class="mx-auto mt-5 text-center">
+            <section class="nes-container with-title is-dark mt-5">
                 <p class="title">{{site.name}}</p>
                 <div class="row g-0">
                     <div class="col-md-4 mt-2 mb-2">
@@ -50,9 +50,14 @@
                 </div>
             </section>
         </div>
-        <div class="col-8 mx-auto mt-4">
-            <section class="nes-container with-title">
-                <p class="title">My Journey</p>
+        <div class="col-8 mx-auto mt-5">
+            <section class="nes-container with-title mt-5">
+                <div class="title">
+                    <div class="d-flex align-items-center">
+                        <i class="nes-icon star"></i>
+                        <span class="ms-2">My Journey</span>
+                    </div>
+                </div>
                 <i class="nes-icon adam-nav adam-walk"></i>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
@@ -100,9 +105,14 @@
                 </ul>
             </section>
         </div>
-        <div class="col-8 mx-auto mt-4 text-center">
-            <section class="nes-container with-title">
-                <p class="title">Credentials</p>
+        <div class="col-8 mx-auto mt-5 text-center">
+            <section class="nes-container with-title mt-5">
+                <div class="title">
+                    <div class="d-flex align-items-center">
+                        <i class="nes-icon trophy"></i>
+                        <span class="ms-2">Credentials</span>
+                    </div>
+                </div>
                 <a href="https://www.credly.com/badges/6db0483f-c448-48eb-804e-c45ab559f4c4/public_url"><img class="cred-badge hover-interact" src="/assets/certs/serverlessdeveloper.png"></a>
                 <a href="https://www.credly.com/badges/2243c5d6-cd75-4ff3-9e5f-7df1055f361a/public_url"><img class="cred-badge hover-interact" src="/assets/certs/solutionsarchitect.png"></a>
                 <a href="https://www.credly.com/badges/95c399e4-9a0d-472b-bd7f-6d04df7a90dc/public_url"><img class="cred-badge hover-interact" src="/assets/certs/cloudpractitioner.png"></a>
@@ -126,7 +136,7 @@
                 function updateTimelineScroller() {
                     var firstTop =  $('.list-group-item').first().offset().top;
                     var lastTop =  $('.list-group-item').last().offset().top;
-                    var percentScrolled = $(window).scrollTop()/($(document).height()-$(window).height());
+                    var percentScrolled = $(window).scrollTop()/Math.min(lastTop, ($(document).height()-$(window).height()));
                     var dist = (lastTop - firstTop) * percentScrolled;
                     $(".adam-nav").css("top", dist);
 
