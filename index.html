@@ -19,7 +19,6 @@
 
         <!-- CSS assets -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
         <link rel="stylesheet" href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
               integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -37,7 +36,7 @@
         {% include header.html %}
         <div class="mx-auto mt-5 text-center">
             <section class="nes-container with-title is-dark mt-5">
-                <p class="title">{{site.name}}</p>
+                <p class="title text-bold">{{site.name}}</p>
                 <div class="row g-0">
                     <div class="col-md-4 mt-2 mb-2">
                         <img class="profile-avatar" src="/assets/adamtalk.gif"/>
@@ -52,54 +51,47 @@
         </div>
         <div class="col-8 mx-auto mt-5">
             <section class="nes-container with-title mt-5">
-                <div class="title">
-                    <div class="d-flex align-items-center">
-                        <i class="nes-icon star"></i>
-                        <span class="ms-2">My Journey</span>
-                    </div>
-                </div>
+                <p class="title text-bold">My Journey</p>
                 <i class="nes-icon adam-nav adam-walk"></i>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
+                    <li class="list-group-item list-internships">
+                        <h4><span class="badge bg-warning">Internships</span></h4>
+                    </li>
+                    <li class="list-group-item mt-1">
                         <span class="badge bg-dark">Summer 2018</span>
-                        <span class="badge bg-warning">Internship</span>
                         <a href="http://apptopia.com" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
-                            <span class="text-bold">Growth Marketing & Technical Intern</span> &mdash; Apptopia
+                            <span class="text-bold">Apptopia</span><br>Growth Marketing & Technical Intern
                         </a>
                     </li>
-                    <li class="list-group-item mt-4">
+                    <li class="list-group-item mt-2">
                         <span class="badge bg-dark">Summer 2019</span>
-                        <span class="badge bg-warning">Internship</span>
-                        <a href="http://disneystreaming.com" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
-                            <span class="text-bold">Software Engineering Intern</span> &mdash; Disney Streaming Services
-                        </a>
-                    </li>
-                    <li class="list-group-item mt-4">
                         <span class="badge bg-dark">Summer 2020</span>
-                        <span class="badge bg-warning">Internship</span>
                         <a href="http://disneystreaming.com" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
-                            <span class="text-bold">Software Engineering Intern</span> &mdash; Disney Streaming Services
+                            <span class="text-bold">Disney Streaming Services</span><br>Software Engineering Intern
                         </a>
                     </li>
-                    <li class="list-group-item mt-4 list-school">
+                    <li class="list-group-item mt-3 list-school">
+                        <h4><span class="badge bg-success">Education</span></h4>
+                    </li>
+                    <li class="list-group-item mt-1 list-school">
                         <span class="badge bg-dark">May 2021</span>
-                        <span class="badge bg-success">Education</span>
                         <a href="/assets/certs/diploma.pdf" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
-                            <span class="text-bold">Graduated with a B.S. in Computer Science & Business</span> &mdash; Brandeis University
+                            <span class="text-bold">Brandeis University</span><br>Bachelor of Science, Computer Science & Business
                         </a>
                     </li>
-                    <li class="list-group-item mt-4 list-full-time">
+                    <li class="list-group-item mt-3 list-full-time">
+                        <h4><span class="badge bg-primary">Full-time</span></h4>
+                    </li>
+                    <li class="list-group-item mt-1">
                         <span class="badge bg-dark">June 2021&mdash;2022</span>
-                        <span class="badge bg-primary">Full-time</span>
                         <a href="http://disneystreaming.com" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
-                            <span class="text-bold">Software Engineer I</span> &mdash; Disney Streaming
+                            <span class="text-bold">Disney Streaming</span><br>Software Engineer I
                         </a>
                     </li>
-                    <li class="list-group-item mt-4">
+                    <li class="list-group-item mt-1">
                         <span class="badge bg-dark">July 2022&mdash;present</span>
-                        <span class="badge bg-primary">Full-time</span>
                         <a href="https://thewaltdisneycompany.com/" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
-                            <span class="text-bold">Software Engineer II</span> &mdash; Disney Entertainment & ESPN
+                            <span class="text-bold">Disney Entertainment & ESPN</span><br>Software Engineer II
                         </a>
                     </li>
                 </ul>
@@ -107,18 +99,31 @@
         </div>
         <div class="col-8 mx-auto mt-5 text-center">
             <section class="nes-container with-title mt-5">
-                <div class="title">
-                    <div class="d-flex align-items-center">
-                        <i class="nes-icon trophy"></i>
-                        <span class="ms-2">Credentials</span>
+                <p class="title text-bold">Credentials</p>
+                <div>
+                    <div class="row">
+                        <div class="col-sm mb-3">
+                            <a href="https://www.credly.com/badges/6db0483f-c448-48eb-804e-c45ab559f4c4/public_url"><img class="cred-badge hover-interact" src="/assets/certs/serverlessdeveloper.png"></a>
+                        </div>
+                        <div class="col-sm mb-3">
+                            <a href="https://www.credly.com/badges/2243c5d6-cd75-4ff3-9e5f-7df1055f361a/public_url"><img class="cred-badge hover-interact" src="/assets/certs/solutionsarchitect.png"></a>
+                        </div>
+                        <div class="col-sm mb-3">
+                            <a href="https://www.credly.com/badges/95c399e4-9a0d-472b-bd7f-6d04df7a90dc/public_url"><img class="cred-badge hover-interact" src="/assets/certs/cloudpractitioner.png"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm mb-3">
+                            <a href="https://www.credly.com/badges/5990c1c5-f324-4e35-abb0-ad87b5131bf3/public_url"><img class="cred-badge hover-interact" src="/assets/certs/lightbendscala.png"></a>
+                        </div>
+                        <div class="col-sm mb-3">
+                            <a href="https://www.credly.com/badges/72c295b7-b131-43d9-a3fb-e9cb8df7aa38/public_url"><img class="cred-badge hover-interact" src="/assets/certs/lightbendreactive.png"></a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="https://www.credly.com/badges/a2430185-a8d9-4a64-8f55-912f282d55b0/public_url"><img class="cred-badge hover-interact" src="/assets/certs/apisec.png"></a>
+                        </div>
                     </div>
                 </div>
-                <a href="https://www.credly.com/badges/6db0483f-c448-48eb-804e-c45ab559f4c4/public_url"><img class="cred-badge hover-interact" src="/assets/certs/serverlessdeveloper.png"></a>
-                <a href="https://www.credly.com/badges/2243c5d6-cd75-4ff3-9e5f-7df1055f361a/public_url"><img class="cred-badge hover-interact" src="/assets/certs/solutionsarchitect.png"></a>
-                <a href="https://www.credly.com/badges/95c399e4-9a0d-472b-bd7f-6d04df7a90dc/public_url"><img class="cred-badge hover-interact" src="/assets/certs/cloudpractitioner.png"></a>
-                <a href="https://www.credly.com/badges/5990c1c5-f324-4e35-abb0-ad87b5131bf3/public_url"><img class="cred-badge hover-interact" src="/assets/certs/lightbendscala.png"></a>
-                <a href="https://www.credly.com/badges/72c295b7-b131-43d9-a3fb-e9cb8df7aa38/public_url"><img class="cred-badge hover-interact" src="/assets/certs/lightbendreactive.png"></a>
-                <a href="https://www.credly.com/badges/a2430185-a8d9-4a64-8f55-912f282d55b0/public_url"><img class="cred-badge hover-interact" src="/assets/certs/apisec.png"></a>
             </section>
         </div>
         <script src="/js/personal.js"></script>

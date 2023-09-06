@@ -4,8 +4,4 @@ $(document).ready(function () {
     }, function(){
         $(this).removeClass( "animated infinite tada" );
     });
-
-    $(".navbar-toggler").click( function() {
-       $(".nes-drop").text(($(".nes-drop").text() == '»') ? '«' : '»');
-    });
 });
