@@ -1,23 +1,22 @@
 <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
     <div class="container-fluid">
-        <a class="navbar-brand hover-interact" href="/#">
-            <img style="height:3.5em" class="d-inline-block" src="/assets/adamprofile.png">{{site.name}}
-        </a>
+        <a class="navbar-brand hover-interact navbar-title" href="/#">{{site.name}}</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a href="https://github.com/{{site.github}}" class="nav-link icon-link text-white hover-interact"><i class="nes-icon github"></i> GitHub</a>
+                    <a href="https://github.com/{{site.github}}" class="nav-link icon-link text-white hover-interact"><i class="nav-github nes-icon github"></i><span class="text-white"> GitHub</span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="https://linkedin.com/in/{{site.linkedin}}" class="nav-link icon-link text-white hover-interact"><i class="nes-icon linkedin"></i> LinkedIn</a>
+                    <a href="https://linkedin.com/in/{{site.linkedin}}" class="nav-link icon-link hover-interact"><i class="nav-linkedin nes-icon linkedin"></i><span class="text-white"> LinkedIn</span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="/assets/resume.pdf" class="nav-link icon-link text-white hover-interact"><i class="nes-icon resume-file"></i> Resume</a>
+                    <a href="/assets/resume.pdf" class="nav-link icon-link hover-interact"><i class="nav-resume nes-icon resume-file"></i><span class="text-white"> Resume</span></a>
                 </li>
             </ul>
+            <img class="style-button hover-interact" src="/assets/retroblock.gif"></img>
         </div>
     </div>
 </nav>
