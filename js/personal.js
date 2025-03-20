@@ -21,7 +21,7 @@ $(document).ready(function () {
 function updateDisplayAesthetic(isModern) {
     if (isModern == "true"){
         $("body").attr("style", "font-family: 'hydrophilia-liquid'!important");
-        $(".style-button").attr("src", "/assets/modernblock.svg");
+        $(".style-button").attr("src", "/assets/moderntoggle.png");
         $(".return-button").removeClass("nes-btn")
         $(".return-button").addClass("btn btn-outline-dark")
 
@@ -35,20 +35,20 @@ function updateDisplayAesthetic(isModern) {
             $(".adam-ko").removeClass("missing-link")
 
             $(".heart").removeClass("nes-icon")
-            $(".heart").addClass("fa-duotone fa-regular fa-heart-crack")
+            $(".heart").addClass("bi bi-heartbreak")
         }
 
         $(".nav-github").removeClass("nes-icon github")
-        $(".nav-github").addClass("fa-brands fa-github")
+        $(".nav-github").addClass("bi bi-github")
 
         $(".nav-linkedin").removeClass("nes-icon linkedin")
-        $(".nav-linkedin").addClass("fa-brands fa-linkedin")
+        $(".nav-linkedin").addClass("bi bi-linkedin")
 
         $(".nav-resume").removeClass("nes-icon resume-file")
-        $(".nav-resume").addClass("fa-duotone fa-regular fa-file-lines")
+        $(".nav-resume").addClass("bi bi-file-earmark-richtext-fill")
     } else {
         $("body").attr("style", "font-family: 'hydrophilia-iced'!important");
-        $(".style-button").attr("src", "/assets/retroblock.gif");
+        $(".style-button").attr("src", "/assets/retrotoggle.png");
         $(".return-button").addClass("nes-btn")
         $(".return-button").removeClass("btn btn-outline-dark")
 
@@ -63,16 +63,16 @@ function updateDisplayAesthetic(isModern) {
             $(".adam-ko").addClass("missing-link")
 
             $(".heart").addClass("nes-icon")
-            $(".heart").removeClass("fa-duotone fa-regular fa-heart-crack")
+            $(".heart").removeClass("bi bi-heartbreak")
         }
 
         $(".nav-github").addClass("nes-icon github")
-        $(".nav-github").removeClass("fa-brands fa-github")
+        $(".nav-github").removeClass("bi bi-github")
 
         $(".nav-linkedin").addClass("nes-icon linkedin")
-        $(".nav-linkedin").removeClass("fa-brands fa-linkedin")
+        $(".nav-linkedin").removeClass("bi bi-linkedin")
 
         $(".nav-resume").addClass("nes-icon resume-file")
-        $(".nav-resume").removeClass("fa-duotone fa-regular fa-file-lines")
+        $(".nav-resume").removeClass("bi bi-file-earmark-richtext-fill")
     }
 }

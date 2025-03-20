@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url("https://use.typekit.net/twl0fso.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 :root {
   /* Adam walking holding laptop pixel art */
@@ -177,6 +178,32 @@ body {
 
 .hover-interact:hover {
     text-decoration: none;
+}
+
+.icon-link>.bi {
+    font-size: 2rem;
+    transition: none;
+}
+
+.bi::before {
+    vertical-align: .125em;
+}
+
+.bi-linkedin {
+    color: #0a66c2 !important;
+    background: white !important;
+    border-radius: 100%;
+}
+
+.bi-github {
+    color: #000000 !important;
+    background: white !important;
+    border-radius: 100%;
+}
+
+.bi-file-earmark-richtext-fill {
+    color: #feffea !important;
+    border-radius: 100%;
 }
 
 .style-button {
