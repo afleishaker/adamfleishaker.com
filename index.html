@@ -49,7 +49,7 @@
                 </div>
             </section>
         </div>
-        <div class="col-8 mx-auto mt-5">
+        <div class="col-10 mx-auto mt-5">
             <section class="nes-container with-title mt-5">
                 <p class="title text-bold">My Journey</p>
                 <i class="nes-icon adam-nav adam-walk"></i>
@@ -83,21 +83,27 @@
                         <h4><span class="badge bg-primary">Full-time</span></h4>
                     </li>
                     <li class="list-group-item mt-1">
-                        <span class="badge bg-dark">June 2021&mdash;2022</span>
+                        <span class="badge bg-dark">June 2021&mdash;June 2022</span>
                         <a href="http://disneystreaming.com" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
                             <span class="text-bold">Disney Streaming</span><br>Software Engineer I
                         </a>
                     </li>
                     <li class="list-group-item mt-1">
-                        <span class="badge bg-dark">July 2022&mdash;present</span>
+                        <span class="badge bg-dark">July 2022&mdash;February 2024</span>
                         <a href="https://thewaltdisneycompany.com/" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
                             <span class="text-bold">Disney Entertainment & ESPN</span><br>Software Engineer II
+                        </a>
+                    </li>
+                    <li class="list-group-item mt-1">
+                        <span class="badge bg-dark">March 2024&mdash;present</span>
+                        <a href="https://thewaltdisneycompany.com/" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+                            <span class="text-bold">Disney Entertainment & ESPN</span><br>Sr. Software Engineer
                         </a>
                     </li>
                 </ul>
             </section>
         </div>
-        <div class="col-8 mx-auto mt-5 text-center">
+        <div class="col-10 mx-auto mt-5 text-center">
             <section class="nes-container with-title mt-5">
                 <p class="title text-bold">Credentials</p>
                 <div>
@@ -149,18 +155,36 @@
                     var schoolTop = $('.list-school').offset().top;
                     var fullTimeTop = $('.list-full-time').offset().top;
                     if ((dist + firstTop) < schoolTop) {
-                        $(".adam-nav").addClass("adam-walk");
-                        $(".adam-nav").removeClass("adam-celebrate");
-                        $(".adam-nav").removeClass("adam-graduate");
+                        if (localStorage.getItem("displayModern") == "true") {
+                            $(".adam-nav").addClass("adam-walk-modern");
+                            $(".adam-nav").removeClass("adam-celebrate-modern");
+                            $(".adam-nav").removeClass("adam-graduate-modern");
+                        } else {
+                            $(".adam-nav").addClass("adam-walk");
+                            $(".adam-nav").removeClass("adam-celebrate");
+                            $(".adam-nav").removeClass("adam-graduate");
+                        }
                     }
                     else if ((dist + firstTop) < fullTimeTop) {
-                        $(".adam-nav").removeClass("adam-walk");
-                        $(".adam-nav").removeClass("adam-celebrate");
-                        $(".adam-nav").addClass("adam-graduate");
+                        if (localStorage.getItem("displayModern") == "true") {
+                            $(".adam-nav").removeClass("adam-walk-modern");
+                            $(".adam-nav").removeClass("adam-celebrate-modern");
+                            $(".adam-nav").addClass("adam-graduate-modern");
+                        } else {
+                            $(".adam-nav").removeClass("adam-walk");
+                            $(".adam-nav").removeClass("adam-celebrate");
+                            $(".adam-nav").addClass("adam-graduate");
+                        }
                     } else {
-                        $(".adam-nav").removeClass("adam-walk");
-                        $(".adam-nav").addClass("adam-celebrate");
-                        $(".adam-nav").removeClass("adam-graduate");
+                        if (localStorage.getItem("displayModern") == "true") {
+                            $(".adam-nav").removeClass("adam-walk-modern");
+                            $(".adam-nav").addClass("adam-celebrate-modern");
+                            $(".adam-nav").removeClass("adam-graduate-modern");
+                        } else {
+                            $(".adam-nav").removeClass("adam-walk");
+                            $(".adam-nav").addClass("adam-celebrate");
+                            $(".adam-nav").removeClass("adam-graduate");
+                        }
                     }
                 }
 

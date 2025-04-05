@@ -21,7 +21,6 @@ $(document).ready(function () {
 function updateDisplayAesthetic(isModern) {
     if (isModern == "true"){
         $("body").attr("style", "font-family: 'hydrophilia-liquid'!important");
-        $(".style-button").attr("src", "/assets/moderntoggle.png");
         $(".return-button").removeClass("nes-btn")
         $(".return-button").addClass("btn btn-outline-dark")
 
@@ -32,23 +31,31 @@ function updateDisplayAesthetic(isModern) {
         }
 
         if ($('.heart').length) {
-            $(".adam-ko").removeClass("missing-link")
-
             $(".heart").removeClass("nes-icon")
             $(".heart").addClass("bi bi-heartbreak")
         }
 
-        $(".nav-github").removeClass("nes-icon github")
-        $(".nav-github").addClass("bi bi-github")
+        if ($(".adam-nav").hasClass("adam-walk")) {
+            $(".adam-nav").removeClass("adam-walk")
+            $(".adam-nav").addClass("adam-walk-modern")
+        }
 
-        $(".nav-linkedin").removeClass("nes-icon linkedin")
-        $(".nav-linkedin").addClass("bi bi-linkedin")
+        if ($(".adam-nav").hasClass("adam-celebrate")) {
+            $(".adam-nav").removeClass("adam-celebrate")
+            $(".adam-nav").addClass("adam-celebrate-modern")
+        }
 
-        $(".nav-resume").removeClass("nes-icon resume-file")
-        $(".nav-resume").addClass("bi bi-file-earmark-richtext-fill")
+        if ($(".adam-nav").hasClass("adam-graduate")) {
+            $(".adam-nav").removeClass("adam-graduate")
+            $(".adam-nav").addClass("adam-graduate-modern")
+        }
+
+        $(".theme-icon").attr("src", "/assets/toggle.svg");
+        $(".github-icon").attr("src", "/assets/github.svg");
+        $(".linkedin-icon").attr("src", "/assets/linkedin.svg");
+        $(".resume-icon").attr("src", "/assets/resume.svg");
     } else {
         $("body").attr("style", "font-family: 'hydrophilia-iced'!important");
-        $(".style-button").attr("src", "/assets/retrotoggle.png");
         $(".return-button").addClass("nes-btn")
         $(".return-button").removeClass("btn btn-outline-dark")
 
@@ -60,19 +67,28 @@ function updateDisplayAesthetic(isModern) {
         }
 
         if ($('.heart').length) {
-            $(".adam-ko").addClass("missing-link")
-
             $(".heart").addClass("nes-icon")
             $(".heart").removeClass("bi bi-heartbreak")
         }
 
-        $(".nav-github").addClass("nes-icon github")
-        $(".nav-github").removeClass("bi bi-github")
+        if ($(".adam-nav").hasClass("adam-walk-modern")) {
+            $(".adam-nav").removeClass("adam-walk-modern")
+            $(".adam-nav").addClass("adam-walk")
+        }
 
-        $(".nav-linkedin").addClass("nes-icon linkedin")
-        $(".nav-linkedin").removeClass("bi bi-linkedin")
+        if ($(".adam-nav").hasClass("adam-celebrate-modern")) {
+            $(".adam-nav").removeClass("adam-celebrate-modern")
+            $(".adam-nav").addClass("adam-celebrate")
+        }
 
-        $(".nav-resume").addClass("nes-icon resume-file")
-        $(".nav-resume").removeClass("bi bi-file-earmark-richtext-fill")
+        if ($(".adam-nav").hasClass("adam-graduate-modern")) {
+            $(".adam-nav").removeClass("adam-graduate-modern")
+            $(".adam-nav").addClass("adam-graduate")
+        }
+
+        $(".theme-icon").attr("src", "/assets/togglepixel.svg");
+        $(".github-icon").attr("src", "/assets/githubpixel.svg");
+        $(".linkedin-icon").attr("src", "/assets/linkedinpixel.svg");
+        $(".resume-icon").attr("src", "/assets/resumepixel.svg");
     }
 }
