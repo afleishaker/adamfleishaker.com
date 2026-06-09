@@ -1,9 +1,4 @@
 $(document).ready(function () {
-    $(".hover-interact").hover( function() {
-        $(this).addClass( "animated infinite tada" );
-    }, function(){
-        $(this).removeClass( "animated infinite tada" );
-    });
 
     updateDisplayAesthetic(localStorage.getItem("displayModern"));
 
@@ -15,6 +10,7 @@ $(document).ready(function () {
          }
 
          updateDisplayAesthetic(localStorage.getItem("displayModern"));
+         window.dispatchEvent(new Event('resize'));
      });
 });
 

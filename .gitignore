@@ -1,4 +1,10 @@
 _site
 .sass-cache
 .jekyll-metadata
+.jekyll-cache/
 .idea
+.vscode/
+.bundle/
+vendor/
+.DS_Store
+._*
