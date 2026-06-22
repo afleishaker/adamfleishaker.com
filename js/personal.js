@@ -2,28 +2,28 @@ $(document).ready(function () {
 
     updateDisplayAesthetic(localStorage.getItem("displayModern"));
 
-    $(".style-button").click(function() {
-         if (localStorage.getItem("displayModern") == "true") {
+    $(".style-button").click(function () {
+        if (localStorage.getItem("displayModern") == "true") {
             localStorage.setItem("displayModern", "false");
-         } else {
+        } else {
             localStorage.setItem("displayModern", "true");
-         }
+        }
 
-         updateDisplayAesthetic(localStorage.getItem("displayModern"));
-         window.dispatchEvent(new Event('resize'));
-     });
+        updateDisplayAesthetic(localStorage.getItem("displayModern"));
+        window.dispatchEvent(new Event('resize'));
+    });
 });
 
 function updateDisplayAesthetic(isModern) {
-    if (isModern == "true"){
-        $("body").attr("style", "font-family: 'hydrophilia-liquid'!important");
+    if (isModern == "true") {
+        $("body").attr("style", "font-family: 'base-12-sans'!important");
         $(".return-button").removeClass("nes-btn")
         $(".return-button").addClass("btn btn-outline-dark")
 
         if ($(".profile-avatar").hasClass("finished-typing")) {
-            $(".profile-avatar").attr("src","/assets/adamsmilemodern.gif");
+            $(".profile-avatar").attr("src", "/assets/adamsmilemodern.gif");
         } else {
-            $(".profile-avatar").attr("src","/assets/adamtalkmodern.gif");
+            $(".profile-avatar").attr("src", "/assets/adamtalkmodern.gif");
         }
 
         if ($('.heart').length) {
@@ -51,15 +51,15 @@ function updateDisplayAesthetic(isModern) {
         $(".linkedin-icon").attr("src", "/assets/linkedin.svg");
         $(".resume-icon").attr("src", "/assets/resume.svg");
     } else {
-        $("body").attr("style", "font-family: 'hydrophilia-iced'!important");
+        $("body").attr("style", "font-family: 'lores-12-narrow'!important");
         $(".return-button").addClass("nes-btn")
         $(".return-button").removeClass("btn btn-outline-dark")
 
 
         if ($(".profile-avatar").hasClass("finished-typing")) {
-            $(".profile-avatar").attr("src","/assets/adamsmile.gif");
+            $(".profile-avatar").attr("src", "/assets/adamsmile.gif");
         } else {
-            $(".profile-avatar").attr("src","/assets/adamtalk.gif");
+            $(".profile-avatar").attr("src", "/assets/adamtalk.gif");
         }
 
         if ($('.heart').length) {

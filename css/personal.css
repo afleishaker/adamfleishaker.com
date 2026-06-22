@@ -3,27 +3,45 @@
 @import url("https://use.typekit.net/twl0fso.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
-
-
 @media (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
-  .nes-btn {
-    border-image-repeat: stretch;
-  }
+    .nes-btn {
+        border-image-repeat: stretch;
+    }
 }
 
 @keyframes adam-walk {
-    from { background-position: 0px 0; }
-    to { background-position: -264px 0; }
+    from {
+        background-position: 0px 0;
+    }
+
+    to {
+        background-position: -264px 0;
+    }
 }
 
 @keyframes adam-graduate {
-    from { background-position: -264px 0; }
-    to { background-position: -528px 0; }
+    from {
+        background-position: -264px 0;
+    }
+
+    to {
+        background-position: -528px 0;
+    }
 }
 
 @keyframes adam-celebrate {
-    from { background-position: -528px 0; }
-    to { background-position: -792px 0; }
+    from {
+        background-position: -528px 0;
+    }
+
+    to {
+        background-position: -792px 0;
+    }
+}
+
+:root {
+    --bs-body-font-size: 1.25rem;
+    --bs-nav-link-font-size: 1.25rem;
 }
 
 .cred-badge {
@@ -42,6 +60,7 @@
     z-index: 1;
     left: -.50rem;
 }
+
 .adam-nav::after {
     content: "";
     position: absolute;
@@ -96,17 +115,17 @@
 
 body {
     overflow-x: hidden;
-    font-family: "hydrophilia-iced"
+    font-family: "lores-12-narrow";
 }
 
 
 .navbar-title {
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
-.item.containers > .nes-container {
+.item.containers>.nes-container {
     display: inline-block;
     max-width: 400px;
 }
@@ -117,17 +136,16 @@ body {
 }
 
 .text-bold {
-    font-weight: 700!important;
-}
-
-.nav-item {
-    font-size: .75rem !important;
-    font-weight: 700;
+    font-weight: 700 !important;
 }
 
 .nes-balloon {
     display: flex;
     align-items: center;
+}
+
+.nes-container.with-title>.title {
+    font-size: 1.5rem !important;
 }
 
 .list-group {
